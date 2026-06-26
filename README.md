@@ -1,6 +1,6 @@
 # RAG Tutorial with LangChain
 
-A step-by-step tutorial demonstrating how to build a Retrieval Augmented Generation (RAG) system using LangChain, OpenAI, and Pinecone.
+A step-by-step tutorial demonstrating how to build a Retrieval Augmented Generation (RAG) system using LangChain, Ollama, and Pinecone.
 
 ## Overview
 
@@ -26,7 +26,7 @@ Follow the commits in order to learn RAG concepts incrementally:
 ### Ingestion (`ingestion.py`)
 - **TextLoader**: Load documents from text files
 - **CharacterTextSplitter**: Split documents into manageable chunks (1000 chars)
-- **OpenAIEmbeddings**: Convert text chunks to vector embeddings
+- **OllamaEmbeddings**: Convert text chunks to vector embeddings
 - **PineconeVectorStore**: Store and index vectors for similarity search
 
 ### Retrieval (`main.py`)
@@ -43,7 +43,6 @@ uv sync
 
 2. Set environment variables:
 ```bash
-OPENAI_API_KEY=your_openai_key
 PINECONE_API_KEY=your_pinecone_key
 INDEX_NAME=your_index_name
 ```
@@ -73,6 +72,6 @@ The tutorial demonstrates two approaches to building RAG:
 ## Technologies
 
 - **LangChain** - Framework for building LLM applications
-- **OpenAI** - Embeddings and chat completions
+- **Ollama** - Embeddings and chat completions
 - **Pinecone** - Vector database for similarity search
 - **Python** - 3.12+
